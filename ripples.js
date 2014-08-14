@@ -1,5 +1,9 @@
 var Ripples = new function() {
 
+  /*
+  Code by Leo Ørsnes, Zeekoo.dk
+  */
+
   this.setup = function() {
 
     var append = ".ripple{display:block;position:absolute;background-color:rgba(0,0,0,.033);border-radius:50%;-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);-o-transform:scale(0);transform:scale(0);-webkit-transition:opacity .3s ease-in;-moz-transition:opacity .3s ease-in;transition:opacity .3s ease-in;opacity:0;pointer-events:none}.ripple.animate{opacity:1;-webkit-animation:ripple .65s ease-in;-webkit-animation-fill-mode:forwards;-moz-animation:ripple .65s ease-in;-moz-animation-fill-mode:forwards;-o-animation:ripple .65s ease-in;-o-animation-fill-mode:forwards;animation:ripple .65s ease-in;animation-fill-mode:forwards}@-webkit-keyframes ripple{75%{opacity:1}100%{opacity:0;-webkit-transform:scale(2)}}@-moz-keyframes ripple{75%{opacity:1}100%{opacity:0;-moz-transform:scale(2)}}@-o-keyframes ripple{75%{opacity:1}100%{opacity:0;-o-transform:scale(2)}}@-ms-keyframes ripple{75%{opacity:1}100%{opacity:0;-ms-transform:scale(2)}}@keyframes ripple{75%{opacity:1}100%{opacity:0;transform:scale(2)}}";

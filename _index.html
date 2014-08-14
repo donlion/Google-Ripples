@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Google Ripples effect</title>
+		<script src="jquery.js"></script>
+		<script src="ripples.js"></script>
+		<script>
+		$(document).ready(function() {
+			Ripples.setup();
+		});
+		$(window).on("load", function() {
+			Ripples.init();
+		});
+		</script>
+	</head>
+	<body>
+		<button data-ripple>
+			I'm a button with the data-ripple attribute
+		</button>
+
+		<div data-ripple>
+			I'm a div with the data-ripple-attribute.<br />
+			Go ahead and give it a try!
+		</div>
+	</body>
+</html>

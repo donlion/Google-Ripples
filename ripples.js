@@ -21,7 +21,8 @@ var Ripples = new function() {
           }
       });
 
-      $("[data-ripple]").click(function(e) {
+
+      $("body").on("click", "[data-ripple]", function(e) {
           if ($(this).find(".ripple").length != 0) {
               $(this).find(".ripple").remove();
           }
